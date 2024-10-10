@@ -1,0 +1,15 @@
+<Company>
+    <Director>
+        <Name>Nguyen Tat Chien</Name>
+    </Director>
+    <Address>
+        <Street>Chuong My</Street>
+        <City>Ha Noi</City>
+        <Country>Viet Nam</Country>
+    </Address>
+    <Contact>
+        <Phone>0862367396</Phone>
+        <Email>ngchienn2202@gmail.com</Email>
+    </Contact>
+    <TaxCode>123456789</TaxCode>
+</Company>

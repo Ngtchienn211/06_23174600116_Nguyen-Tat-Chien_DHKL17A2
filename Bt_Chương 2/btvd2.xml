@@ -1,0 +1,30 @@
+<students>
+    <student>
+        <studentID>06</studentID>
+        <name>Nguyen Tat Chien</name>
+        <birthYear>2005</birthYear>
+        <class>DHKL17A2HN</class>
+        <gender>Nam</gender>
+    </student>
+    <student>
+        <studentID>010</studentID>
+        <name>Dang Mai Duong</name>
+        <birthYear>2006</birthYear>
+        <class>DHKL18A2</class>
+        <gender>Nu</gender>
+    </student>
+    <student>
+        <studentID>034</studentID>
+        <name>Bui Duc Dung</name>
+        <birthYear>2005</birthYear>
+        <class>DHKL17A3</class>
+        <gender>Nam</gender>
+    </student>
+    <student>
+        <studentID>014</studentID>
+        <name>Phạm Thị Dung</name>
+        <birthYear>2004</birthYear>
+        <class>DHKL</class>
+        <gender>Nu</gender>
+    </student>
+</
