@@ -1,0 +1,10 @@
+<root>
+    <item>
+        <name>Item 1</name>
+        <value>Value 1</value>
+    </item>
+    <item>
+        <name>Item 2</name>
+        <value>Value 2</value>
+    </item>
+</root>

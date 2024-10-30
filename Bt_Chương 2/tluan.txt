@@ -1,2 +1,86 @@
-XML là từ viết tắt của từ Extensible Markup Language là ngôn ngữ đánh dấu mở rộng. XML có chức năng truyền dữ liệu và mô tả nhiều loại dữ liệu khác nhau. Tác dụng chính của XML là đơn giản hóa việc chia sẻ dữ liệu giữa các nền tảng và các hệ thống được kết nối thông qua mạng Internet.
+1. XML là từ viết tắt của từ Extensible Markup Language là ngôn ngữ đánh dấu mở rộng. XML có chức năng truyền dữ liệu và mô tả nhiều loại dữ liệu khác nhau. Tác dụng chính của XML là đơn giản hóa việc chia sẻ dữ liệu giữa các nền tảng và các hệ thống được kết nối thông qua mạng Internet.
 XML dùng để cấu trúc, lưu trữ và trong trao đổi dữ liệu giữa các ứng dụng và lưu trữ dữ liệu
+
+
+2. 
+DOM (Document Object Model) là một khái niệm trong lập trình web, được sử dụng để truy cập và thao tác với nội dung của trang web. DOM là một mô hình đối tượng được trình duyệt tạo ra dựa trên cấu trúc của tài liệu HTML hoặc XML của trang web. 
+
+
+3. Cú pháp của tài liệu XML (eXtensible Markup Language) bao gồm các quy tắc cơ bản sau để đảm bảo tài liệu XML hợp lệ và có thể đọc được. Dưới đây là một số quy tắc chính:
+    *Phần tử gốc (Root Element):
+        - Mọi tài liệu XML phải có một phần tử gốc duy nhất bao bọc tất cả các phần tử khác.
+           +) Ví dụ:
+<books>
+    <book>
+        <title>XML Basics</title>
+        <author>John Doe</author>
+    </book>
+</books>
+        
+      *Mở và đóng thẻ:
+             - Mỗi phần tử phải có một thẻ mở và một thẻ đóng.
+                +) Ví dụ:
+<title>XML Basics</title>
+        
+      *Chú thích:
+            - Chú thích được đặt trong <!-- -->.
+            +) Ví dụ:
+ <!-- Đây là chú thích trong XML -->
+      
+      *Phân biệt chữ hoa và chữ thường:
+            - XML phân biệt chữ hoa và chữ thường, nên <Title> và <title> là hai thẻ khác nhau.
+      
+      * Thuộc tính (Attributes):
+Các thuộc tính cung cấp thông tin bổ sung cho phần tử, được đặt trong thẻ mở.
+Tất cả các giá trị thuộc tính phải được đặt trong dấu ngoặc kép.
+<book id="1" genre="fiction">
+    <title>XML Guide</title>
+</book>
+      
+
+      * Khai báo XML (XML Declaration):
+          - Khai báo này không bắt buộc, nhưng nếu có, nó phải đứng ở dòng đầu tiên của tài liệu.
+<?xml version="1.0" encoding="UTF-8"?>
+    
+      *Tổ chức cây phân cấp:
+          -  Các phần tử có thể lồng nhau, tạo thành một cấu trúc cây phân cấp.
+
+       *Dữ liệu thô (CDATA):
+          - Nếu muốn thêm dữ liệu thô (không cần phân tích cú pháp), ta đặt chúng trong thẻ <![CDATA[ ]]>.
+<content><![CDATA[Đây là nội dung thô]]></content>
+
+
+4. JSON (JavaScript Object Notation) là một định dạng trao đổi dữ liệu nhẹ, dễ đọc và dễ ghi, thường được sử dụng để truyền dữ liệu giữa máy chủ và trình duyệt trong các ứng dụng web. JSON được tạo ra dựa trên cú pháp của JavaScript, nhưng nó là một định dạng độc lập, có thể được sử dụng trong nhiều ngôn ngữ lập trình khác nhau như Python, Java, C#, PHP, và nhiều ngôn ngữ khác.
+
+
+5. 
+  *Giới hạn loại dữ liệu:
+     - JSON hỗ trợ các loại dữ liệu cơ bản như chuỗi, số, mảng, đối tượng, boolean (true/false) và null. Tuy nhiên, nó không hỗ trợ các loại dữ liệu phức tạp khác như ngày giờ, tập hợp, hoặc các đối tượng tùy chỉnh (custom objects) trong Python. Điều này yêu cầu phải chuyển đổi hoặc serialize dữ liệu phức tạp trước khi lưu trữ trong JSON.
+  
+
+  *Sự khác biệt về kiểu dữ liệu:
+       - Một số kiểu dữ liệu trong Python không có đối ứng trực tiếp trong JSON. Ví dụ, tuple trong Python khi chuyển đổi sang JSON sẽ bị biến thành list, gây mất tính bất biến (immutability). Tương tự, None trong Python sẽ được chuyển thành null trong JSON.
+
+
+   *Thiếu hỗ trợ cho các hàm (Functions):
+       - JSON chỉ chứa dữ liệu và không thể lưu trữ hay truyền các hàm (functions) hoặc các phương thức (methods) của Python. Điều này làm cho JSON không phù hợp khi cần lưu trữ các logic hoặc phương thức kèm theo dữ liệu.
+
+
+    *Bảo mật:
+        - JSON là một định dạng văn bản thuần túy, do đó dữ liệu JSON có thể dễ dàng bị đọc hoặc thay đổi khi lưu trữ hoặc truyền đi mà không có biện pháp bảo vệ. JSON cũng dễ bị tấn công khi dùng làm đầu vào mà không qua kiểm tra và xác thực kỹ càng, đặc biệt trong các ứng dụng web.
+ 
+
+     *Hiệu suất và dung lượng:
+          - JSON có dung lượng lớn hơn một số định dạng nhị phân khác như Protocol Buffers hoặc MessagePack, vì JSON yêu cầu định dạng văn bản. Trong các ứng dụng yêu cầu hiệu suất cao hoặc truyền tải dữ liệu lớn, JSON có thể không phải là lựa chọn tối ưu.
+
+
+      *Khả năng đọc/ghi chậm đối với dữ liệu lớn:
+         - Khi xử lý các tệp JSON có kích thước lớn, hiệu suất đọc và ghi dữ liệu có thể chậm, đặc biệt khi so sánh với các định dạng dữ liệu nhị phân hoặc cơ sở dữ liệu.
+
+
+6. 
+API XML là một giao diện lập trình ứng dụng (API) sử dụng định dạng XML để trao đổi dữ liệu giữa các hệ thống, ứng dụng hoặc dịch vụ. Thay vì trả về dữ liệu ở dạng JSON như các API hiện đại, API XML sử dụng XML để định dạng dữ liệu, phù hợp với nhiều loại ứng dụng khác nhau.
+
+
+7.
+API JSON (JSON API) là một giao diện lập trình ứng dụng (API) sử dụng định dạng JSON (JavaScript Object Notation) để truyền và nhận dữ liệu giữa máy chủ và máy khách. API JSON trở nên rất phổ biến trong các ứng dụng web và di động hiện đại nhờ tính đơn giản, nhẹ nhàng và khả năng tương thích tốt.
