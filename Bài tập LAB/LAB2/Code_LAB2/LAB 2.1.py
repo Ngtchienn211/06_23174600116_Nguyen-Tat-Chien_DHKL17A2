@@ -12,7 +12,7 @@ nhiet_do_thap_nhat = np.min(nhiet_do)
 ngay_cao_nhat = np.argmax(nhiet_do) + 1
 ngay_thap_nhat = np.argmin(nhiet_do) + 1
 
-chenh_lech_nhiet_do = np.abs(np.diff(nhiet_do))
+chenh_lech_nhiet_do = np.abs(np.abs(nhiet_do[1:] - nhiet_do[:-1]))
 ngay_chenh_lech_lon_nhat = np.argmax(chenh_lech_nhiet_do) + 1
 
 print("Ngày có nhiệt độ cao nhất:", ngay_cao_nhat, "với nhiệt độ:", nhiet_do_cao_nhat)
